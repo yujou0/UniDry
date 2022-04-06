@@ -559,6 +559,7 @@ footer {
 
 .showinmobile {
   display: none;
+  min-height: 220px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -901,7 +902,25 @@ footer {
   top: 68%;
   right: 0%;
   background: #666;
-  width: calc(90% - 20px);
+  width: calc(85% - 20px);
+}
+
+@media only screen and (max-width: 1500px) {
+  .section9 h5::after {
+    width: calc(85% - 30px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section9 h5::after {
+    width: calc(75% - 20px);
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .section9 h5::after {
+    width: calc(75% - 35px);
+  }
 }
 
 .section9 form {

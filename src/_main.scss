@@ -179,6 +179,7 @@ footer{
 }
 .showinmobile{
   display: none;
+  min-height: 220px;
   @media only screen and (max-width: 768px)  {
     display: block;
         }
@@ -408,7 +409,16 @@ h5{
     top: 68%;
     right:0%;
     background: #666;
-    width: calc(90% - 20px);
+    width: calc(85% - 20px);
+    @media only screen and (max-width: 1500px)  {
+      width: calc(85% - 30px);
+    }
+    @media only screen and (max-width: 768px)  {
+      width: calc(75% - 20px);
+    }
+    @media only screen and (max-width: 350px)  {
+      width: calc(75% - 35px);
+    }
   }
   form{
     width: 100%;
